@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,7 +45,6 @@
 				263999A169520FE73DE47F84 /* Pods-podTest.debug.xcconfig */,
 				4EC3970BCF8349978DB986C4 /* Pods-podTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -95,6 +94,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 793206B6273A461600A342DC /* Build configuration list for PBXNativeTarget "podTest" */;
 			buildPhases = (
+				79FA035B273B7A2C005A6093 /* ShellScript */,
 				30985D19BBF44CD336858360 /* [CP] Check Pods Manifest.lock */,
 				793206A2273A461500A342DC /* Sources */,
 				793206A3273A461500A342DC /* Frameworks */,
@@ -193,6 +193,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-podTest/Pods-podTest-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		79FA035B273B7A2C005A6093 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"good morning\"\ncd ${PROJECT_DIR}\n\ntest -e Pods || pod install && sleep 30\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

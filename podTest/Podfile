@@ -6,7 +6,6 @@ target 'podTest' do
   use_frameworks!
 
   # Pods for podTest
-export LANG=ja_JP.UTF-8
 pod 'Alamofire'
 
 end

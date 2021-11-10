@@ -12,24 +12,46 @@
 		793206AC273A461500A342DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793206AB273A461500A342DC /* ViewController.swift */; };
 		793206AE273A461600A342DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793206AD273A461600A342DC /* Assets.xcassets */; };
 		793206B1273A461600A342DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793206AF273A461600A342DC /* Main.storyboard */; };
+		79FA038F273BB4BE005A6093 /* myFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79FA038A273BB493005A6093 /* myFramework.framework */; };
+		79FA0391273BB4CE005A6093 /* myFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79FA038A273BB493005A6093 /* myFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		79FA037A273BB27F005A6093 /* PBXContainerItemProxy */ = {
+		79FA0389273BB493005A6093 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 79FA0375273BB27F005A6093 /* myFramework.xcodeproj */;
+			containerPortal = 79FA0384273BB493005A6093 /* myFramework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7929D0EA2731569400D33F5D;
 			remoteInfo = myFramework;
 		};
-		79FA037C273BB27F005A6093 /* PBXContainerItemProxy */ = {
+		79FA038B273BB493005A6093 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 79FA0375273BB27F005A6093 /* myFramework.xcodeproj */;
+			containerPortal = 79FA0384273BB493005A6093 /* myFramework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7929D0F32731569400D33F5D;
 			remoteInfo = myFrameworkTests;
 		};
+		79FA038D273BB4B7005A6093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79FA0384273BB493005A6093 /* myFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7929D0E92731569400D33F5D;
+			remoteInfo = myFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79FA0390273BB4C1005A6093 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				79FA0391273BB4CE005A6093 /* myFramework.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		263999A169520FE73DE47F84 /* Pods-podTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-podTest.debug.xcconfig"; path = "Target Support Files/Pods-podTest/Pods-podTest.debug.xcconfig"; sourceTree = "<group>"; };
@@ -42,7 +64,7 @@
 		793206B0273A461600A342DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		793206B2273A461600A342DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		793206B3273A461600A342DC /* podTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = podTest.entitlements; sourceTree = "<group>"; };
-		79FA0375273BB27F005A6093 /* myFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = myFramework.xcodeproj; path = ../../../TestFramework/myFramework/myFramework.xcodeproj; sourceTree = "<group>"; };
+		79FA0384273BB493005A6093 /* myFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = myFramework.xcodeproj; path = ../../TestFramework/myFramework/myFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79FA038F273BB4BE005A6093 /* myFramework.framework in Frameworks */,
 				0CA39DE9A6312DEA68738C9D /* Pods_podTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +92,7 @@
 		7932069D273A461500A342DC = {
 			isa = PBXGroup;
 			children = (
+				79FA0384273BB493005A6093 /* myFramework.xcodeproj */,
 				793206A8273A461500A342DC /* podTest */,
 				793206A7273A461500A342DC /* Products */,
 				46E1F706922A4D1BC7BEC77C /* Pods */,
@@ -87,7 +111,6 @@
 		793206A8273A461500A342DC /* podTest */ = {
 			isa = PBXGroup;
 			children = (
-				79FA0375273BB27F005A6093 /* myFramework.xcodeproj */,
 				793206A9273A461500A342DC /* AppDelegate.swift */,
 				793206AB273A461500A342DC /* ViewController.swift */,
 				793206AD273A461600A342DC /* Assets.xcassets */,
@@ -98,11 +121,11 @@
 			path = podTest;
 			sourceTree = "<group>";
 		};
-		79FA0376273BB27F005A6093 /* Products */ = {
+		79FA0385273BB493005A6093 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79FA037B273BB27F005A6093 /* myFramework.framework */,
-				79FA037D273BB27F005A6093 /* myFrameworkTests.xctest */,
+				79FA038A273BB493005A6093 /* myFramework.framework */,
+				79FA038C273BB493005A6093 /* myFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,16 +145,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 793206B6273A461600A342DC /* Build configuration list for PBXNativeTarget "podTest" */;
 			buildPhases = (
-				79FA035B273B7A2C005A6093 /* ShellScript */,
 				30985D19BBF44CD336858360 /* [CP] Check Pods Manifest.lock */,
+				79FA035B273B7A2C005A6093 /* ShellScript */,
 				793206A2273A461500A342DC /* Sources */,
 				793206A3273A461500A342DC /* Frameworks */,
 				793206A4273A461500A342DC /* Resources */,
 				599FC5CED1B07E969C66E686 /* [CP] Embed Pods Frameworks */,
+				79FA0390273BB4C1005A6093 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				79FA038E273BB4B7005A6093 /* PBXTargetDependency */,
 			);
 			name = podTest;
 			productName = podTest;
@@ -165,8 +190,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 79FA0376273BB27F005A6093 /* Products */;
-					ProjectRef = 79FA0375273BB27F005A6093 /* myFramework.xcodeproj */;
+					ProductGroup = 79FA0385273BB493005A6093 /* Products */;
+					ProjectRef = 79FA0384273BB493005A6093 /* myFramework.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -177,18 +202,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		79FA037B273BB27F005A6093 /* myFramework.framework */ = {
+		79FA038A273BB493005A6093 /* myFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = myFramework.framework;
-			remoteRef = 79FA037A273BB27F005A6093 /* PBXContainerItemProxy */;
+			remoteRef = 79FA0389273BB493005A6093 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		79FA037D273BB27F005A6093 /* myFrameworkTests.xctest */ = {
+		79FA038C273BB493005A6093 /* myFrameworkTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = myFrameworkTests.xctest;
-			remoteRef = 79FA037C273BB27F005A6093 /* PBXContainerItemProxy */;
+			remoteRef = 79FA038B273BB493005A6093 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -275,6 +300,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79FA038E273BB4B7005A6093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = myFramework;
+			targetProxy = 79FA038D273BB4B7005A6093 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		793206AF273A461600A342DC /* Main.storyboard */ = {
